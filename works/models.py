@@ -16,7 +16,7 @@ class Worklist(models.Model):
 
     name=models.CharField('工单名称',max_length=100,)
     kehuName = models.CharField('客户名称', max_length=100,blank=False)
-    phone=models.IntegerField('联系方式',default='13300000000')
+    phone=models.CharField('联系方式',max_length=100,default='13300000000')
     numRmb = models.CharField('总金额', max_length=100,default='None' )
     lir = models.CharField('利润', max_length=100,default='None' )
     type = models.CharField('业务类型', choices=gdType,max_length=20,default='1' )
@@ -39,7 +39,7 @@ class Jiazhikehu(models.Model):
         ('3', '其他'),
     )
     name = models.CharField('客户名称', max_length=100,blank=False )
-    phone = models.IntegerField('联系方式',  default='13300000000')
+    phone = models.CharField('联系方式',max_length=100, default='13300000000')
     type = models.CharField('合作类型', choices=gdType,max_length=20,default='1' )
     text = models.CharField('备注', max_length=100, default='无')
     created_time = models.DateTimeField('创建时间', auto_now_add=True)

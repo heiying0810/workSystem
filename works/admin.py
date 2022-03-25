@@ -7,7 +7,7 @@ from .models import Worklist,Jiazhikehu
 @admin.register(Worklist)
 class ApplistAdmin(admin.ModelAdmin):
     search_fields = ['kehuName']
-    list_display = ('id','name','created_time','kehuName','type','phone','numRmb','lir','name_status','text')
+    list_display = ('id','created_time','name','kehuName','type','phone','numRmb','lir','name_status','text')
     list_per_page = 15
     ordering = ('-created_time',)
     list_display_links = ('kehuName',)

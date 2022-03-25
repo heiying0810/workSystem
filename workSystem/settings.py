@@ -66,18 +66,18 @@ WSGI_APPLICATION = 'workSystem.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
-    # },
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'worklist',
-        'USER': 'root',
-        'PASSWORD': 'Mysqldb123,./',
-        'HOST': '192.168.75.130',
-        'PORT': '3306',
-    }
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    },
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'worklist',
+    #     'USER': 'root',
+    #     'PASSWORD': 'Mysqldb123,./',
+    #     'HOST': '192.168.75.130',
+    #     'PORT': '3306',
+    # }
 }
 
 
@@ -129,6 +129,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media').replace('\\', '/')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ## 20220321begin
 # 自定义logo
+DATETIME_FORMAT = 'Y-m-d'
 SIMPLEUI_LOGO = "https://note.youdao.com/yws/public/resource/409abee72c58d655a4b8b66ccabbd05b/xmlnote/WEBRESOURCE5546112ac84fbfb878c63c2d37278d52/30316"
 # 关闭首页右上角主页信息
 SIMPLEUI_HOME_INFO = False
