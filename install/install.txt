@@ -1,0 +1,18 @@
+# 01.检测或者安装Python环境(Pychon3.6+)
+    python --version
+# 02.检测或安装nginx(无版本要求)
+# 03.检测或安装PIP(pip3)
+    pip --version
+# 04.使用pip安装包
+    pip install -r requirements.txt
+# 05.创建数据库,并导入
+    mysql -uuser -ppassword db < worklist.sql
+# 06.git clone 代码
+    git clone https://github.com/heiying0810/workSystem.git
+# 07.修改mysql配置文件
+    vim workSystem/settings.py
+    DATABASES.default
+# 08.复制git下载的代码路径
+# 09.启动django
+    python manage.py runserver
+# 10.修改nginx并调整路径，重启nginx
